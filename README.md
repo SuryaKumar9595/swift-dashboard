@@ -73,17 +73,17 @@ SWIFT-Dashboard/
 ```bash
 git clone https://github.com/SuryaKumar9595/swift-dashboard.git
 cd swift-dashboard
-
+```
 ---
 
-## 🧾 License
+## 2. 🧾 License
 
 This project was developed as a part of an interview assignment.  
 You may use or modify it for **learning** purposes.
 
 ---
 
-## 🙋‍♂️ Author
+## 3. 🙋‍♂️ Author
 
 **SURYA KUMAR R**  
 MERN Full-Stack Developer.  
