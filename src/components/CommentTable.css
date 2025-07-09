@@ -1,0 +1,150 @@
+.comment-table-wrapper {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  max-width: 100%;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.sort-options {
+  display: flex;
+  gap: 10px;
+}
+
+.sort-options select {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.search-input {
+  padding: 6px 12px;
+  width: 260px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.comment-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 14px;
+}
+
+.comment-table th,
+.comment-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+
+.comment-table th {
+  background-color: #f3f4f6;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+}
+
+.comment-table th:hover {
+  background-color: #e5e7eb;
+}
+
+.comment-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.comment-cell {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 320px;
+}
+
+.comment-cell.expanded {
+  white-space: normal;
+  max-width: 100%;
+}
+
+.comment-cell .truncate-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 400px;
+  cursor: pointer;
+}
+
+.comment-cell .toggle {
+  color: #007bff;
+  cursor: pointer;
+  margin-left: 6px;
+  font-size: 13px;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.pagination button {
+  padding: 6px 12px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.profile-avatar-navbar {
+  width: 32px;
+  height: 32px;
+  background-color: #e5e7eb;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+}
+
+.profile-avatar-navbar span {
+  margin-right: 8px;
+  color: #2563eb;
+}
+
+@media (max-width: 768px) {
+  .comment-table td:nth-child(4),
+  .comment-table th:nth-child(4) {
+    max-width: 180px;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+
+  .toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

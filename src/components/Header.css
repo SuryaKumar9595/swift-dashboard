@@ -1,0 +1,48 @@
+.header {
+  background-color: #202143;
+  color: white;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.profile-button {
+  background-color: white;
+  color: #202143;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.profile-avatar-navbar {
+  width: 32px;
+  height: 32px;
+  background-color: #e5e7eb;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  text-align: center; 
+  line-height: 32px;
+  font-family: 'Segoe UI', sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 7px;
+}
+
+
+
+
+
